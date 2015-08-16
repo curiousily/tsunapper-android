@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:baselineAligned="false" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight=".90"
+        android:background="@drawable/app_view_selector" >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/app_view_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_icon" />
+
+        <TextView
+            android:id="@+id/app_view_title"
+            style="@style/AppTitleStyle"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/app_view_icon" />
+
+        <TextView
+            android:id="@+id/app_view_publisher"
+            style="@style/LightTextStyle"
+            android:layout_below="@id/app_view_title"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/app_view_icon" />
+
+        <TextView
+            android:id="@+id/app_view_recommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/app_view_install_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/app_view_icon"
+            android:background="@null"
+            android:contentDescription="@string/install_app_button"
+            android:src="@drawable/app_install" />
+
+        <TextView
+            android:id="@+id/app_view_download_text"
+            style="@style/DarkTextStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/app_view_install_button"
+            android:text="@string/install" />
+
+        <ImageButton
+            android:id="@+id/app_view_screens_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/app_view_download_text"
+            android:background="@null"
+            android:contentDescription="@string/app_screens_button"
+            android:src="@drawable/app_screens" />
+
+        <TextView
+            android:id="@+id/app_view_screens_label"
+            style="@style/DarkTextStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/app_view_screens_button"
+            android:text="@string/images_label" />
+    </RelativeLayout>
+
+</LinearLayout>
